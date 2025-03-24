@@ -1,4 +1,4 @@
-### Configurar UTF-8
+# Configurar UTF-8
 
 	chcp 65001
 
@@ -27,7 +27,7 @@ debido a que en la variable libro ya tengo un signo de porcentaje, printf() toma
     	return 0;
 	}
 
-## Especificadores de formato:
+# Especificadores de formato:
 ***Resumen: ***
 
 	Enteros: %d, %i, %u, %x, %o
@@ -37,7 +37,7 @@ debido a que en la variable libro ya tengo un signo de porcentaje, printf() toma
 	Largos: %ld, %lu, %lld, %llu
 	Porcentaje: %%
 
-### 1. Enteros
+## 1. Enteros
 &bull; %d: Imprime un entero con signo (por ejemplo, -5 o 42)
 
 	int num = 42;
@@ -89,7 +89,7 @@ debido a que en la variable libro ya tengo un signo de porcentaje, printf() toma
 	unsigned long num = 1234567890;
 	printf("%llu\n", num);  // Imprime: 1234567890
 
-### 2. Floats
+## 2. Floats
 
 &bull; %f: Imprime un número de punto flotante en formato decimal.
 
@@ -119,7 +119,7 @@ debido a que en la variable libro ya tengo un signo de porcentaje, printf() toma
 	printf("%.2f\n", 3.14159);  // Imprime: 3.14
 	printf("%.3f\n", 3.14159);  // Imprime: 3.141
 
-### 3. Caracteres y cadenas
+## 3. Caracteres y cadenas
 
 &bull; %c: Imprime un solo carácter.
 
@@ -131,7 +131,7 @@ debido a que en la variable libro ya tengo un signo de porcentaje, printf() toma
 	char str[] = "Hola, mundo!";
 	printf("%s\n", str);  // Imprime: Hola, mundo!
 
-### 4. Punteros y direcciones de memoria
+## 4. Punteros y direcciones de memoria
 
 &bull; %p: Imprime una dirección de memoria (dirección de un puntero).
 
