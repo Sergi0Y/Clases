@@ -10,7 +10,7 @@ int main()
     printf("My number is %d and my letter is %c", myNum, myLetter);
     return 0;
 } */
-
+dsfsd
 
 //PRINT Y SCANF
 /*  
