@@ -1,5 +1,5 @@
 //Suma
-/* 
+
 #include <stdio.h>
 
 //los nombres de las funciones idelmente tienen que explicar de la forma más breve posible que es lo que hace la misma
@@ -13,7 +13,7 @@ int main()
     sumar(1,2);
     sumar(3,4);
     return 0;
-} */
+}
 
 // MULTIPLICACIÓN
 

@@ -1,15 +1,16 @@
 //IMPRIMIR CHAR Y NUM
 
-/* #include <stdio.h>
+#include <stdio.h>
 
 int main()
 {
     int numeros[5] = {1, 2, 3, 4, 5};    
     int myNum = 15;
     char myLetter = 'D';
-    printf("My number is %d and my letter is %c", myNum, myLetter);
+    printf("My number is %d and my letter is %c\n", myNum, myLetter);
+    printf("%d\n", numeros[0]);
     return 0;
-} */
+}
 
 
 //PRINT Y SCANF
@@ -37,14 +38,14 @@ return 0;
 
 // USAR CHAR COMO STRING
 
-#include <stdio.h>
+/* #include <stdio.h>
 
 int main () {
     char* name = "aafsdfsdfsd";
     printf("%s", name);
     
     return 0;
-}
+} */
 
 /* El asterisco (*) en char* indica que la variable es un puntero, lo que permite manejar cadenas de texto almacenadas en memoria. No convierte un char en string, sino que simplemente apunta al primer carácter de una cadena, lo que permite que printf("%s", name); imprima toda la cadena hasta encontrar \0 (carácter nulo).
  */ 
