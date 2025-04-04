@@ -115,7 +115,7 @@ int main() {
 // EJERCICIO 5
 //Escribe un programa que pida al usuario su nombre completo (usando scanf o fgets), y luego imprima el nombre en mayúsculas.
 
-/* 
+/
 #include <stdio.h>
 
 //Se incluye para poder usar funciones que manejan caracteres como toupper()
@@ -136,12 +136,12 @@ int main() {
     //Lee la linea completa y la guarda en el nombre
     fgets(nombre, 100, stdin);
 
-    //******************************************************************************************************
+    //*****************************************************************************
     //STDIN significa "standart input"es una forma de hacer una referencia al texto que ingresará el usuario se aplica cuando usamos fgets
     
     //scanf() usa internamente de forma automática stdin, por eso no lo escribimos cuando usamos el scanf
     //pero a diferencia con fgets hay que declararlo siempre.
-    //******************************************************************************************************
+    //*****************************************************************************
     
     for (int i = 0; nombre[i] != '\0'; i++) {
         //Se recorre el array nombre carácter por carácter hasta que encuentre '\0', que es el carácter nulo que indica el fin de la cadena. 
@@ -155,5 +155,5 @@ int main() {
     
     return 0;
 } 
- */    
+    
 
