@@ -41,11 +41,11 @@ Primero se escriben las etiquetas **ul** que serán mi comienzo y final de lista
 <img src="https://static.vecteezy.com/system/resources/thumbnails/006/054/084/small/retro-style-background-with-grunge-texture-free-vector.jpg">
 Podemos agregar imágenes en nuestra página web, para ello, existen dos maneras.
 La primera es descargando la imagen y trabajando localmente:
-```html
+```
 <img src = /images/fondo.png>
 ```
 La otra forma es pasarle directamente el link de la imagen dentro de mi etiqueta:
-```html
+```
 <img src = https://static.vecteezy.com/system/resources/thumbnails/006/054/084/small/retro-style-background-with-grunge-texture-free-vector.jpg>
 ```
 
