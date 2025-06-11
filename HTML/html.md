@@ -53,3 +53,24 @@ La otra forma es pasarle directamente el link de la imagen dentro de mi etiqueta
 &bull;Por otro lado, la segunda forma de agregar imágenes, es más rapida en comparación con la primera, pero corro el riesgo de que la página de donde saqué mi imagen se caiga y no esté disponible. 
 
 
+# Atributos
+Las etiquetas además pueden poseer atributos, estos son sirven para definir propiedades de la misma, por ejemplo en la etiqueta imagen, se agrega el atributo **src** (source) que es de donde vamos a obtener nuestra imagen.
+Existen varios tipos:
+
+
+&bull;El atributo **href** de la etiqueta **a** especifica una url a la cual el hipervínculo nos va a llevar
+
+&bull;El atributo **src** de la etiqueta **img** especifica la ruta de donde va a obtener mi imagen, esta puede ser local o una url
+
+&bull;Los atributos **width** y **height** son generalmente usados en la etiqueta **img** el cual me asigna los tamaños que va a tomar
+
+&bull;El atributo **alt** usado en la etiqueta **img** me genera un texto alternativo en caso de que la imagen no esté disponible
+
+&bull;El atributo **style** es usado para añadir estilos a mi elemento, como puede ser un color, tipo de fuente, tamaño, etc.
+
+&bull;El atributo **lang** de la etiqueta **html** define el lenguaje de la página web
+
+&bull;el atributo **title** define información extra sobre un elementos
+
+
+
