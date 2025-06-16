@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS evento_roblox;
+USE evento_roblox;
+
+CREATE TABLE IF NOT EXISTS participantes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    telefono VARCHAR(20) NOT NULL,
+    ciudad VARCHAR(100) NOT NULL,
+    pais VARCHAR(100) NOT NULL,
+    cd_frente INT NOT NULL,
+    cd_atras INT NOT NULL,
+    fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

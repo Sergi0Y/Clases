@@ -1,0 +1,134 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: justify;
+  margin: 0;
+}
+.flor {
+  text-align: justify;
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(14, 119, 11);
+   border: 2px solid rgb(106, 212, 64);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 30px;
+    background-color: white;
+  box-shadow: 0 4px 12px rgba(4, 48, 22, 0.4);
+}
+
+.tabla {
+  text-align: justify;
+  max-width: 800px;
+  flex-direction: column;
+   color: rgb(14, 119, 11);
+   border: 2px solid rgb(106, 212, 64);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 30px;
+    background-color: white;
+  margin: 0 auto;
+    box-shadow: 0 4px 12px rgba(4, 48, 22, 0.4);
+
+}
+
+hr {
+  border: none;
+  text-align: start;
+  height: 2px;
+  background-color: rgba(63, 167, 4, 0.5);
+  margin: 10px auto;
+  width: 800px;
+}
+
+.contenedor {
+  border: 2px solid rgb(106, 212, 64);
+   border-radius: 10px;
+    display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  padding: 0 auto;
+  width: fit-content;
+}
+
+.formulario{ 
+  border: 2px solid rgb(106, 212, 64);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(4, 48, 22, 0.4);
+    text-align: justify;
+    color: rgb(14, 119, 11);
+}
+.formulario td {
+  padding: 10px 15px;
+}
+
+.espacio{
+  display: flex;
+  margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(4, 48, 22, 0.4);
+  border-radius: 5px;
+  padding: 7px;
+  border: 2px solid rgb(106, 212, 64);
+}
+
+.popo{
+     display: block;
+     margin: 20px auto 0 auto;
+     border: 2px solid rgb(106, 212, 64);
+     background-color: rgb(15, 126, 49);
+     color: aliceblue;
+     border-radius: 5px;
+     padding: 10px;
+}
+
+.robux {
+  position: fixed;
+  top: 0px;
+  width: 100pc;
+  height: 100vh;
+  z-index: -1; 
+ }
+
+h6{
+    color: rgb(255, 0, 0) ;
+}
+
+.contenedor .tabla{
+    border-radius: 7px;
+    border: 2px solid rgb(106, 212, 64);
+    justify-content: center;
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 800px;
+}
+
+
+
+/* ---------LOGIN-------- */
+
+.container-login{
+    border: 2px solid rgb(106, 212, 64);
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    width: fit-content;    
+    padding: 0 5px 0 5px;
+    height: fit-content;
+    margin: auto;   
+    display: block;
+    justify-items: center;
+}
+.decoration-none{
+    text-align: center; 
+    text-decoration: none;
+}
+
+
