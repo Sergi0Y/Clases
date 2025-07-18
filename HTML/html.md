@@ -166,7 +166,7 @@ Adicionalmente a lo anterior también podemos agregar listas ordenadas y no orde
 La sintaxis para escribir listas es la siguiente:
 Primero se escriben las etiquetas **ul** que serán mi comienzo y final de lista, luego, dentro de estas etiquetas irá mi contenido o mi listado, en etiquetas **li**
 
-&bull;ejemplo:
+&bull;ejemplo lista desordenada:
 
 ```html
 <ul>
@@ -176,7 +176,28 @@ Primero se escriben las etiquetas **ul** que serán mi comienzo y final de lista
   <li>DuckDuckGo</li>
 </ul>
 ```
+<ul>
+  <li>Google</li>
+  <li>Yahoo</li>
+  <li>Bing</li>
+  <li>DuckDuckGo</li>
+</ul>
+&bull;ejemplo lista ordenada:
 
+```html
+<ol>
+  <li>Google</li>
+  <li>Yahoo</li>
+  <li>Bing</li>
+  <li>DuckDuckGo</li>
+</ol>
+```
+<ol>
+  <li>Google</li>
+  <li>Yahoo</li>
+  <li>Bing</li>
+  <li>DuckDuckGo</li>
+</ol>
 #### Imágenes
 
 <img src="https://static.vecteezy.com/system/resources/thumbnails/006/054/084/small/retro-style-background-with-grunge-texture-free-vector.jpg">
@@ -243,4 +264,39 @@ Los navegadores poseen estilos por defecto, esto se le llaman **Stylesheet user 
 
 
 # HTML Semántico
-Significa algo con significado, consigue describir el contenido de forma correcta, por ejemplo, el elemento **p** describe el significado de un párrafo. Esto es importante ya que permite seguir de mejor manera el flujo del contenido, haciendo referencia al código escrito, ya que un buen código se ve reflejado en una buena página web
+Significa algo con significado, consigue describir el contenido de forma correcta, por ejemplo, el elemento **p** describe el significado de un párrafo. Esto es importante ya que permite seguir de mejor manera el flujo del contenido, haciendo referencia al código escrito, ya que un buen código se ve reflejado en una buena página web. Es importante mencionar que la página se deba ver bien y sea de fácil compresión solamente con la semántica de HTML, sin la necesidad de agregar estilos. 
+
+---
+
+<img src="https://i.imgur.com/daUcCDJ.png">
+
+&bull; Esto es solamente una representación de cómo podrían ir ordenados los diferentes tipos de contenedores que veremos.
+ 
+---
+
+
+  ## h1-h6
+  Es muy importante que se usen escalonados los tamaños de textos, por ejemplo, yo al comienzo de mi web creo un h2, al final de esta no puedo crear un h1 ya que es una mala práctica, uno debe mantener un orden, se pueden repetir los mismos pero no deben estar desordenados.
+
+  ## div
+
+
+  ## span
+
+  ## article
+  Es como un bloque con información propia, contenida que si tu extraes esta información a otro sitio sigue sin perder el sentido. bloque independiente de informacion sin perder significado
+ 
+  ## aside
+  Es como algo separado del contenido pricipal ,anexo a este, aunque visualmente no se vea separado, si lo está, es algo que da información suplementaria al contenido que mostramos, algo que lo acompaña al contenido principal, por eso se pone en el lateral. relacionado indirectamente
+
+  ## section
+  Abarca secciones independientes genericas de un doc, pueden existir secciones dentro de otras, no hay problema con ello
+  ## main
+  Es importante mencionar que solamente debe haber un **main** a diferencia de los headers y footers.
+  Este debe englobal el contenido principal de la página
+
+  ## header
+  Es la cabecera de mi página, pueden crear más de uno sin ningún problema, acá
+
+  ## footer
+  Es como un pie de página, es información secundaria, dentro de este se usa tambien la etiqueta  <small>small</small>, la cual se puede usar de diferentes maneras, como brindar una explicación secundaria, para el copyright, sirve además para brindar un conternido anexo, para dar algo de información que no es tan importante como el resto, incapié, referencias, contexto, en palabras simples el **small** no sólo es una letra pequeña, se tiene varios usos que nos sirven para destacar un poco el texto o separarlo del resto, es una aclaración breve.
