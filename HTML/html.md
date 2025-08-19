@@ -2,7 +2,7 @@
 
 ## nodo doctype
 
-Lo primero a tener en cuenta en cualquier archivo de tipo HTML es un nodo, no etiqueta ni elemento, que va al comienzo de todo, este nodo sirve par aespecificar la version de html que el documento está utilizando, esta declaración le dice al navegador como debe interpretar y renderizar el código html de la página.
+Lo primero a tener en cuenta en cualquier archivo de tipo HTML es un **nodo**, no etiqueta ni elemento, que va al comienzo de todo, este nodo sirve par aespecificar la version de html que el documento está utilizando, esta declaración le dice al navegador como debe interpretar y renderizar el código html de la página.
 
 ```html
 <!DOCTYPE html>
@@ -47,25 +47,25 @@ Nuestro head nos sirve para introducir metadatos, informacion extra, donde van l
   <meta name ="description" content="explicación breve sobre qué trata tu página">
 </head>
 ```
-#### UTF-8
+#### &bull; UTF-8
 Nos permite trabajar con emojis, tiles y letras o caracterizaciones propias del español, como la letra ñ o solamente con la virgulilla (~)
 
-#### viewport
+#### &bull; viewport
 Este meta se usa para permitir una mejor adaptabilidad del contenido. Sirve para que el ancho del contenido sea el mismo del ancho de la pantalla del dispositivo en el cual se está visualizando la página para que, a partir de ahí, se acomode el contenido y sea manipulable si perder la estrcutura que nosotros hemos creado. Se usa principalmente para dispositivos móviles, pero afecta el comportamiento del sitio en cualquier dispositivo con pantalla escalable, como tablets o navegadores de escritorio con ventana reducida.
 
-#### title
+#### &bull; title
 La estiqueta title además de brindarnos un título para nuestra página (el cual aparece en la pestaña), nos sirve al momento de ralizar las búsquedas por google o por cualquier navegador, va a encontrar nuestra página según el title que le hayamos asignado, por lo que es muy importante que sepan elegir bien un nombre para nuestra web
 
-#### robots
+#### &bull; robots
 Se usa para dirigirse a los bots de google o de los navegadores que recorren la web para buscar contenido, con el **content** digo que esta será mi index para que aparezca en los  resultados de búsquedas y el **follow** sirve por si agregamos enlaces dentro de mi página, me permite seguirlos y analizarlos. Si no se incluye, los navegadores los asumiran por defecto, pero es mucho mejor agregarlo para tener un mejor control sobre el SEO (optimización para motores de búsqueda)
 
-#### theme-color
+#### &bull; theme-color
 Este meta nos brinda una mayor personalización de la página, lo que hace es cambiar el color de la barra superior de nuestra web, con el color que agregamos en el **content**. Este funciona solamente para celulares, es posible verlos desde los computadores pero hay que hacer pasos, en cambio desde el celular es inmediato.
 
-#### favicon
+#### &bull; favicon
 Este a diferencia del resto, no es un metadato, se usa la etiqueta **link** ya que está enlazando un recurso, el cual es el ícono que aparece en la pestaña cuando abrimos nuestra página.
 
-#### description
+#### &bull; description
 Este atributo es de suma importancia, ya que además de servir como una breve descripción del contenido de mi web, generalmente, es el texto que aparece abajo del título al momento de buscar mi página en google por ejemplo
 
 ### SEO
@@ -93,23 +93,23 @@ Para conocer las demás etiquetas de open graph pueden ir a la siguiente página
 </head>
 ```
 
-##### property
+##### &bull; property
 ---
 Nos sirve visualizar el titulo de nuestra web (como si fuese un cardview, lo veremos después en el curso de css)de forma resumida al momento de compartirla como enlace. Si este no se agrega como **content** luego del **og:title** se usa por defecto el título que se le brindó anteriormente a la web.
 
-##### description 
+##### &bull; description 
 ---
 Nos brinda una descripción de la página, la cual va debajo del título
 
-##### image 
+##### &bull; image 
 ---
 Va a ser la imagen que se visualizará al momento de compartir nuestro link. **image:alt** es la descripción de esta por si se llegase a caer nuestra imagen.
 
-##### alternate 
+##### &bull; alternate 
 ---
 Nos sirve cuando vamos a necesitar la página en otro idioma, acá agregaremos la página en el idioma alternativo al español por ejemplo
 
-##### canonical
+##### &bull; canonical
 ---
 Con esta etiqueta le decimos cual es la pagina que realmente es la principal de nuestro sitio. Por ejemplo si tengo **www.sergio.dev** y tengo **https://sergio.dev**,su función es informar a los motores de búsqueda cuál es la URL preferida o "canónica" de una página, cuando hay varias URLs que muestran el mismo contenido. Por ejemplo, tengo estas 3 páginas: 
 - https://sergio.dev
@@ -132,7 +132,7 @@ Esta etiqueta me sirve para decirle a mi html como quiero que se vean las etique
   </style>
 </head>
 ```
-Lo qu es está realizando es que, en mi etiqueta style, voy a crear un tipo de estilo para el body, el cual va a ser un color de fondo, esto se abordará de mejor manera en CSS.
+Lo que se está realizando es que, en mi etiqueta style, voy a crear un tipo de estilo para el body, el cual va a ser un color de fondo, esto se abordará de mejor manera en CSS.
 
 
 ## Body
@@ -221,7 +221,7 @@ Respecto sobre los atributos y dependiendo de lo que se vaya a incluir en el no 
 Existen varios tipos:
 Atributos específicos y globales o generales
 
-##### Específicos
+##### &bull; Específicos
 
 &bull;El atributo **src** de la etiqueta **img** especifica la ruta de donde va a obtener mi imagen, esta puede ser local o una url
 
@@ -229,7 +229,7 @@ Atributos específicos y globales o generales
 
 &bull;El atributo **alt** usado en la etiqueta **img** me genera un texto alternativo en caso de que la imagen no esté disponible
 
-##### Globales
+##### &bull; Globales
 
 &bull;Los atributos **width** y **height** son generalmente usados en la etiqueta **img** el cual me asigna los tamaños que va a tomar
 
@@ -278,25 +278,37 @@ Significa algo con significado, consigue describir el contenido de forma correct
   ## h1-h6
   Es muy importante que se usen escalonados los tamaños de textos, por ejemplo, yo al comienzo de mi web creo un h2, al final de esta no puedo crear un h1 ya que es una mala práctica, uno debe mantener un orden, se pueden repetir los mismos pero no deben estar desordenados.
 
-  ## div
+  ## header
+  Es la cabecera de mi página, pueden crear más de uno sin ningún problema. El contenido dentro de la etiqueta <header> suele incluir elementos como el título de la página, el logotipo, la navegación y otros elementos de encabezado relacionados. Pueden existir más de un header
 
-
-  ## span
+  ## nav
+  Se utiliza para representar la sección principal de navegación en un documento HTML, identificar claramente las áreas de navegación principal, facilitando a los navegadores web, motores de búsqueda y tecnologías de asistencia comprender mejor la estructura y jerarquía del contenido de un sitio web.
+  
+  ## main
+  La etiqueta main se usa para declarar el contenido principal de la página. Es importante mencionar que solamente debe haber un **main** a diferencia de los headers y footers. Su contenido no debe incluir elementos como encabezados, pies de página, formularios de búsqueda, enlaces de navegación, etc.
+  
 
   ## article
-  Es como un bloque con información propia, contenida que si tu extraes esta información a otro sitio sigue sin perder el sentido. bloque independiente de informacion sin perder significado
+  Es como un bloque con información propia, contenida que si tu extraes esta información a otro sitio sigue sin perder el sentido. Abarca contenido autocontenido/independiente. Es importante que debe ser independiente y significativa por sí sola, y no simplemente una parte de una sección más grande.
+  
  
   ## aside
-  Es como algo separado del contenido pricipal ,anexo a este, aunque visualmente no se vea separado, si lo está, es algo que da información suplementaria al contenido que mostramos, algo que lo acompaña al contenido principal, por eso se pone en el lateral. relacionado indirectamente
+  Es una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal. Estas secciones son a menudo representadas como barras laterales y contienen una explicación al margen como una definición de glosario o elementos relacionados indirectamente
+  
 
   ## section
-  Abarca secciones independientes genericas de un doc, pueden existir secciones dentro de otras, no hay problema con ello
-  ## main
-  Es importante mencionar que solamente debe haber un **main** a diferencia de los headers y footers.
-  Este debe englobal el contenido principal de la página
-
-  ## header
-  Es la cabecera de mi página, pueden crear más de uno sin ningún problema, acá
+  Es un elemento de sección genérico, y solo se debe usar si no hay un elemento más específico para representarlo. Debe llevar casi siempre un encabezado que explique el tema de esa sección. Se usa para agrupar contenido temáticamente relacionado. 
+ 
 
   ## footer
-  Es como un pie de página, es información secundaria, dentro de este se usa tambien la etiqueta  <small>small</small>, la cual se puede usar de diferentes maneras, como brindar una explicación secundaria, para el copyright, sirve además para brindar un conternido anexo, para dar algo de información que no es tan importante como el resto, incapié, referencias, contexto, en palabras simples el **small** no sólo es una letra pequeña, se tiene varios usos que nos sirven para destacar un poco el texto o separarlo del resto, es una aclaración breve.
+  Es como un pie de página, es información secundaria,el cual, típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
+  Dentro de este se usa tambien la etiqueta  <small>small</small>, la cual se puede usar de diferentes maneras, como brindar una explicación secundaria, para el copyright, sirve además para brindar un contenido anexo, para dar algo de información que no es tan importante como el resto, incapié, referencias, contexto, en palabras simples el **small** no sólo es una letra pequeña, se tiene varios usos que nos sirven para destacar un poco el texto o separarlo del resto.
+
+------------
+# HTML No semántico
+
+  ## div
+  El div es un elemento de tipo bloque, es decir, abarca todo el espacio disponible siempre. No es muy recomendable usarlo ya que no es parte del HTML semántico a menos que se estén probando funcionalidades
+
+  ## span
+  Es muy similar al div pero este abarca solo el espacio que le corresponde a lo que esté dentro, usa el mínimo espacio disponible y a diferencia del div este es un elemento en línea
