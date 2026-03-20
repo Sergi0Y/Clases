@@ -1,0 +1,26 @@
+
+
+a:link {
+  color: blue;      /* enlace normal */
+}
+a:visited {
+  color: purple;    /* enlace visitado */
+}
+a:hover {
+  color: red;       /* al pasar el mouse */
+  text-decoration: underline;
+}
+a:active {
+  color: orange;    /* cuando haces clic */
+}
+
+
+a:hover {
+  color: red;      /* cambia color cuando pasas el mouse */
+}
+
+
+p::first-letter {
+  font-size: 24px;  /* solo la primera letra del párrafo */
+  color: blue;
+}

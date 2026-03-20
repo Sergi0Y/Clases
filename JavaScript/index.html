@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 2 Js</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Contenido de prueba de JavaScript</h1>
+        </header>
+
+        <section class="cambio-txt-btn">
+            <header>
+                <h2>Cambio de texto con btn</h2>
+            </header>
+
+            <p id="js">parrafo de prueba</p>
+            <button type="button" onclick="cambioTexto()">button</button>
+        </section>
+        <section class="cont-click">
+            <H2>Contador de clicks</H2>
+            <button type="button" onclick="count()">Haz click</button>
+            <p id="clicks">Haz hecho 0 clicks</p>
+        </section>
+
+        <section class="dark-mode">
+            <h2>Modo oscuro</h2>
+            <p>texto de prueba de modo oscuro</p>
+            <button type="button" onclick="darkMode()">Modo oscuro</button>
+            <button type="button" onclick="darkModeB()">body modo oscuro</button>
+        </section>
+        
+    </main>
+    <script>
+        //cambio txt 
+        function cambioTexto() {
+            document.getElementById("js").innerText = "texto cambiado";
+        }
+        //contador clicks
+        let contador = 0;
+        function count() {
+            contador++
+            document.getElementById("clicks").innerText = `Haz hecho ${contador} clicks`
+        }
+        //modo oscuro        
+        function darkMode() {
+            const section = document.querySelector(".dark-mode");
+            section.classList.toggle("active");
+        }
+        function darkModeB() {
+            document.body.classList.toggle("dark-theme");
+
+
+            /* if(!dark){
+                document.body.style.backgroundColor="black";
+                document.body.style.color="white";
+                dark=true;
+            }else{
+                document.body.style.backgroundColor="#09f";
+                document.body.style.color="black";
+                dark=false;
+            } */
+
+        }
+        //validar form        
+        const notas = [];
+        notas.push(6.5);
+        notas.push(5.6);
+        notas.push(3);
+        notas.forEach(n => console.log(n));
+
+        const dobles = notas.map(n => n * 2);
+        console.log(`dobles: ${dobles}`);
+
+        const aprobadas = notas.filter(n => n >= 4);
+        console.log(`aprobadas: ${aprobadas} `)
+
+        const suma = notas.reduce((acc, v) => acc + v, 0);
+        console.log(suma)
+
+        const numeros = [10, 20, 30, 40];
+        console.table(numeros);
+
+    </script>
+</body>
+
+</html>

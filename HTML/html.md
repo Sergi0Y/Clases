@@ -263,7 +263,7 @@ Los navegadores poseen estilos por defecto, esto se le llaman **Stylesheet user 
 
 
 
-# HTML Semántico
+## HTML Semántico
 Significa algo con significado, consigue describir el contenido de forma correcta, por ejemplo, el elemento **p** describe el significado de un párrafo. Esto es importante ya que permite seguir de mejor manera el flujo del contenido, haciendo referencia al código escrito, ya que un buen código se ve reflejado en una buena página web. Es importante mencionar que la página se deba ver bien y sea de fácil compresión solamente con la semántica de HTML, sin la necesidad de agregar estilos. 
 
 ---
@@ -275,40 +275,52 @@ Significa algo con significado, consigue describir el contenido de forma correct
 ---
 
 
-  ## h1-h6
+  ### h1-h6
   Es muy importante que se usen escalonados los tamaños de textos, por ejemplo, yo al comienzo de mi web creo un h2, al final de esta no puedo crear un h1 ya que es una mala práctica, uno debe mantener un orden, se pueden repetir los mismos pero no deben estar desordenados.
 
-  ## header
+  ### header
   Es la cabecera de mi página, pueden crear más de uno sin ningún problema. El contenido dentro de la etiqueta <header> suele incluir elementos como el título de la página, el logotipo, la navegación y otros elementos de encabezado relacionados. Pueden existir más de un header
 
-  ## nav
+  ### nav
   Se utiliza para representar la sección principal de navegación en un documento HTML, identificar claramente las áreas de navegación principal, facilitando a los navegadores web, motores de búsqueda y tecnologías de asistencia comprender mejor la estructura y jerarquía del contenido de un sitio web.
   
-  ## main
+  ### main
   La etiqueta main se usa para declarar el contenido principal de la página. Es importante mencionar que solamente debe haber un **main** a diferencia de los headers y footers. Su contenido no debe incluir elementos como encabezados, pies de página, formularios de búsqueda, enlaces de navegación, etc.
   
 
-  ## article
+  ### article
   Es como un bloque con información propia, contenida que si tu extraes esta información a otro sitio sigue sin perder el sentido. Abarca contenido autocontenido/independiente. Es importante que debe ser independiente y significativa por sí sola, y no simplemente una parte de una sección más grande.
   
  
-  ## aside
+  ### aside
   Es una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal. Estas secciones son a menudo representadas como barras laterales y contienen una explicación al margen como una definición de glosario o elementos relacionados indirectamente
   
 
-  ## section
+  ### section
   Es un elemento de sección genérico, y solo se debe usar si no hay un elemento más específico para representarlo. Debe llevar casi siempre un encabezado que explique el tema de esa sección. Se usa para agrupar contenido temáticamente relacionado. 
  
 
-  ## footer
+  ### footer
   Es como un pie de página, es información secundaria,el cual, típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.
   Dentro de este se usa tambien la etiqueta  <small>small</small>, la cual se puede usar de diferentes maneras, como brindar una explicación secundaria, para el copyright, sirve además para brindar un contenido anexo, para dar algo de información que no es tan importante como el resto, incapié, referencias, contexto, en palabras simples el **small** no sólo es una letra pequeña, se tiene varios usos que nos sirven para destacar un poco el texto o separarlo del resto.
 
 ------------
-# HTML No semántico
+## HTML No semántico
 
-  ## div
+
+  ### div
   El div es un elemento de tipo bloque, es decir, abarca todo el espacio disponible siempre. No es muy recomendable usarlo ya que no es parte del HTML semántico a menos que se estén probando funcionalidades
 
-  ## span
+  ### span
   Es muy similar al div pero este abarca solo el espacio que le corresponde a lo que esté dentro, usa el mínimo espacio disponible y a diferencia del div este es un elemento en línea
+
+
+## CSS
+Hojas de Estilo en Cascada (Cascading Style Sheets) o CSS es el lenguaje de estilos utilizado para describir la presentación de documentos HTML o XML. CSS describe cómo debe ser renderizado el elemento estructurado en la pantalla, en papel, en el habla o en otros medios.
+CSS no es un lenguaje de programación ni tampoco un lenguaje de marcado, es un lenguaje de hojas de estilo
+
+FALTA AGREGAR EL PPT
+
+
+
+

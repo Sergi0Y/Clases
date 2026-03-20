@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/HTML/clases/Styles/pseudo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clase 8: pseudo-clases
+        </h1>
+        <h2>Temas:</h2>
+        <nav>
+            <ul>
+
+                <li>
+                    <a href="/HTML/clases/c9/c9.html" class="no-deco">Volver a selectores Avanzados</a>
+                </li>
+
+                <li>
+                    <a href="#Hover" class="no-deco">:hover</a>
+                </li>
+                <li>
+                    <a href="#Focus" class="no-deco">:focus</a>
+                </li>
+                <li>
+                    <a href="#Active" class="no-deco">:active</a>
+                </li>                
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+
+        <section id="Hover">
+            <section class="p-hover">
+                <h2>Ejemplos de hover</h2>
+                <p><a href="https://manz.dev/">Hover en links</a></p>
+                <p>hover en textos</p>
+                <p class="h-size">No solo sirve para cambiar el color</p>
+                <div class="h-div">hola esto es un div</div>
+
+
+            </section>
+        </section>
+
+        <section id="Focus">
+            <h2>Ejemplos de focus</h2>
+            <form class="f-form" action="post">
+                <label for="text">Ingrese su nombre</label>
+                <input type="text" required placeholder="su nombre">
+
+                <label for="email">Ingrese su correo</label>
+                <input type="email" required placeholder="su correo">
+
+                <label for="pass">Ingrese su contraseña</label>
+                <input type="password" required placeholder="su superclave">
+
+                <p>focus en botones</p>
+                <button value="Enviar">Enviar</button>
+            </form>
+        </section>
+        <section id="Active">
+            <h2>Ejemplos de active</h2>
+            <button>btn activado</button>
+            <div class="card">Tarjeta clickeable</div>
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>

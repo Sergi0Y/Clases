@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxmodel</title>
+    <link rel="stylesheet" href="/HTML/clases/Styles/boxmodel-style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contenidos y tamaños de un contenedor</h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="#Icontent" class="no-deco">Contenido Intrínseco</a>
+            </li>
+            <li>
+                <a href="#Econtent" class="no-deco">Contenido Extrínseco</a>
+            </li>
+            <li>
+                <a href="https://web.dev/learn/css/box-model?hl=es#depurando_el_modelo_de_caja" class="no-deco"
+                    id="link" target="_blank"> Clase de práctica</a>
+            </li>
+            <li>
+                <a href="#cbox" class="no-deco">Content Box</a>
+            </li>
+            <li>
+                <a href="#bbox" class="no-deco">Border Box</a>
+            </li>
+
+        </ul>
+    </nav>
+    <main>
+        <section id="Icontent">
+            <h3>Contenido Intrínseco</h3>
+            <p>En el contenido intrínseco, el navegador hace que el contenedor se adapte al contenido, es decir, el
+                tamaño del contenedor es proporcional al tamaño del contenido.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+
+            <div>
+                <p class="int">hola, estoy probando un parrafo dentro de un div con márgenes limitados</p>
+            </div>
+        </section>
+
+        <section id="Econtent">
+            <h3>Contenido Extrínseco</h3>
+            <p>Este a diferencia del intrínseco, define un tamaño fijo del contenedor por lo que el contenido se puede
+                desbordar.
+            </p>
+            <p><strong>Ejemplo:</strong></p>
+            <div>
+                <p class="ext">hola, estoy probando un parrafo dentro de un div con márgenes limitados</p>
+            </div>
+        </section>
+
+        <section id="#cbox">
+            <div class="box-1">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur dolores
+
+                </p>
+            </div>
+        </section>
+
+        <section id="#bbox">
+            <div class="box-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla beatae possimus aut suscipit ducimus iste numquam consequuntur non recusandae tempora quibusdam, nemo quae placeat temporibus cumque. Facere tenetur sapiente minus!</div>
+        </section>
+    </main>
+</body>
+
+</html>

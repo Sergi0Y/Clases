@@ -1,0 +1,104 @@
+:root{
+    background-color: #09f;
+}
+.no-deco{    
+    text-decoration: none;
+    color: black;        
+}
+
+.no-deco:hover{
+  color: green;
+}
+
+/* ----------------HOVER ----------------*/
+#Hover h2{
+    background-color: green;
+    width: max-content;
+}
+.p-hover p:hover{
+  color: yellow;
+}
+.p-hover a{
+    transition: background-color 1s;
+}
+.p-hover a:hover{
+    color: rgba(255, 0, 0, 0.829);
+    background-color: yellow;
+}
+.h-size:hover{    
+    font-size: 22px;
+}
+.h-div{
+    border: 1px solid;
+    display: flex;
+    width: 50px;  
+    transition: 1s;
+}
+
+.h-div:hover{
+    border-radius: 50px;    
+    padding: 10px;
+    text-align: center;    
+    border: 2px dotted red;
+    translate: 20px;
+}
+
+/*---------------- FOCUS ----------------*/
+#Focus h2{
+    background-color: green;
+    width: max-content;
+}
+.f-form{
+    
+    width: min-content;
+    padding: 10px;
+}
+.f-form label{    
+    margin-bottom: 5px;     
+}
+
+.f-form input:focus {
+    border: 2px dotted red;
+    border-radius: 50px;
+    outline: none; /* quita el borde por defecto del navegador*/
+}
+.f-form button:focus{    
+    background-color: black;
+    color: white;
+    border: 1px solid;    
+    border-radius: 50px;
+}
+
+/*---------------- ACTIVE ----------------*/
+#Active h2{
+    background-color: green;
+    width: max-content;
+}
+section button{
+    margin-bottom: 20px;
+}
+
+section button:active{        
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    transition: all 0.2s ease; /* suaviza el efecto */
+    transform: translateY(3px); /* se “hunde” */
+    background-color: #ccc;      /* cambia el color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* sombra más suave */
+}
+.card {
+    width: 150px;
+    height: 100px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: all 0.2s;
+}
+
+.card:active {
+    transform: translateY(5px);
+    background-color: #ccc;
+}

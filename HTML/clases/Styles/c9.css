@@ -1,0 +1,55 @@
+:root{
+  background-color: #09f;
+}
+
+/*---------------------SELECTORES AVANZADOS--------------------- */
+
+.no-deco{    
+    text-decoration: none;
+    color: black;        
+}
+
+.no-deco:hover{
+  color: green;
+}
+
+
+
+/* COMIENZO */
+section a[href]::after {
+  content: ": " attr(href);
+  display: inline-block;
+  color: #666;
+}
+
+section a[href^="http://"]::after {
+  content: " :(Página no segura) " attr(href);
+}
+
+/* FINAL */
+
+.before a[href]::before {
+  content: url("/HTML/clases/c9/link.svg");
+}
+
+.before a[href$=".pdf"]::before {
+  content: url("/HTML/clases/c9/doc.svg");
+}
+
+
+/* FIRST CHILD */
+
+section p:first-child{
+  color: red;
+}
+
+/* LAST CHILD */
+
+section p:last-child{
+  color: green;
+}
+
+/* NTH CHILD */
+section p:nth-child(2){
+  color: blue;
+}

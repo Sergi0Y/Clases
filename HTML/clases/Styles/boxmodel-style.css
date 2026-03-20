@@ -1,0 +1,46 @@
+body {
+  background-color: #09f;
+}
+
+/* NAV */
+.no-deco{    
+    text-decoration: none;
+    color: black;    
+}
+
+#link:hover{
+    color: red;
+}
+div{
+    margin-bottom: 50px;
+}
+main section p{
+    margin-bottom: 20px;
+}
+/* CONTENIDO INTRINSECO */
+.int{
+  width: max-content;
+  height: min-content;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 50px;
+}
+
+/* CONTENIDO EXTRINSECO */
+.ext{
+  width: 100px;
+  height: 50px;
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 50px;
+}
+
+
+/* BOX SIZING */
+.box-1 {
+ width: 100px;
+ height: 120px;
+ padding: 5px;
+ border: 2px solid blue;
+ box-sizing: content-box;
+}

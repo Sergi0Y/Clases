@@ -5,23 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas y Forms</title>
+
+    <!-- <link rel="stylesheet" href="/HTML/clases/Styles/styles.css"> -->
+
+    <!-- GOOGLE FONTS -->
+    <!--EDU NSW ACT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/HTML/clases/Styles/styles.css">
+
+
+
     <style>
+
+        
+        body{            
+            font-family: "Edu NSW ACT Cursive", cursive;
+            font-size: 20px;
+        }
+
+
         table,
         th,
         td {
             border: 1px solid black;
-            border-collapse: collapse;
+            border-collapse: collapse;            
+        }
+
+        p {
+            color: red;
+            size: 32px;
         }
     </style>
+
 </head>
 
 <body style="background-color: #09f;">
     <h1>Mi primer formulario en html</h1>
     <!-- TABLAS -->
-    <!-- <table align="center" width="50%" bgcolor="#F1F1F1" cellspacing="3" cellpadding="10">
+    <table align="center" width="50%" bgcolor="#F1F1F1" cellspacing="3" cellpadding="10">
         <caption><h2>Texto explicativo de los datos</h2></caption>
         
-
         <thead>
             <tr>
                 <th>Título 1</th>
@@ -51,40 +79,57 @@
                 <td colspan="3">Resumen de tabla</td>
             </tr>
         </tfoot>
-    </table> -->
+    </table>
 
     <!-- FORMS -->
 
     <form action="enviar_formulario.php" method="post">
         <form>
             <fieldset>
-                <legend><h3>Formulario de ejemplo</h3></legend>
-            <!-- Texto libre -->
-            <input type="text" name="usuario" placeholder="Escribe tu nombre">
-            <br><br>
+                <legend>
+                    <h3>Formulario de ejemplo</h3>
+                </legend>
+                <!-- Texto libre -->
+                <input type="text" name="usuario" placeholder="Escribe tu nombre">
+                <br><br>
 
-            <!-- Contraseña -->
-            <input type="password" name="clave" placeholder="Contraseña">
-            <br><br>
-            <!-- Números -->
-            <input type="number" name="edad" min="1" max="100">
-            <br><br>
-            <!-- Selección única -->
-            <input type="radio" name="genero" value="M"> Masculino
-            <input type="radio" name="genero" value="F"> Femenino
-            <br><br>
-            <!-- Selección múltiple -->
-            <input type="checkbox" name="acepto"> Acepto términos
-            <br><br>
-            <!-- Fecha -->
-            <input type="date" name="fecha_nacimiento">
-            <br><br>
-            <!-- Botón para enviar -->
-            <input type="submit" value="Enviar">
+                <!-- Contraseña -->
+                <input type="password" name="clave" placeholder="Contraseña">
+                <br><br>
+                <!-- Números -->
+                <input type="number" name="edad" min="1" max="100">
+                <br><br>
+                <!-- Selección única -->
+                <input type="radio" name="genero" value="M"> Masculino
+                <input type="radio" name="genero" value="F"> Femenino
+                <br><br>
+                <!-- Selección múltiple -->
+                <input type="checkbox" name="acepto"> Acepto términos
+                <br><br>
+                <!-- Fecha -->
+                <input type="date" name="fecha_nacimiento">
+                <br><br>
+                <!-- Botón para enviar -->
+                <input type="submit" value="Enviar">
             </fieldset>
         </form>
 
     </form>
+
+
+
+
+
+
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+
+
 
 </body>
 

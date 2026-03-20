@@ -1,0 +1,25 @@
+:root{
+    background-color: #09f;
+}
+section{
+    border: 1px solid;
+    width: max-content;
+    padding: 10px;
+}
+
+.poke-demos{
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+.pk{
+    margin: 0 7px 0px 7px;
+    padding: 10px;
+}
+
+#function-pk{
+    width: max-content;
+}
+
+label #pokeNameI {
+  margin-bottom: 15px; /* Añade un espacio debajo del input */
+}
