@@ -1,0 +1,50 @@
+2. Paso a Paso Técnico (Lo que deben hacer)
+A. Crear la carpeta de "Templates"
+Django busca los archivos HTML en una carpeta llamada templates.
+
+Dentro de la carpeta de tu app principal, crea una nueva carpeta llamada templates.
+
+Dentro de templates, crea otra carpeta llamada principal (esto es por orden y buena práctica de Django).
+
+Dentro de esa última carpeta, crea un archivo llamado index.html.
+
+Ruta final: principal/templates/principal/index.html
+
+B. Escribir el HTML (Lo que ellos ya saben)
+Diles que pongan su código de clase ahí:
+
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Web con Django</title>
+</head>
+<body>
+    <h1>¡Hola desde mi primer Template!</h1>
+    <p>Este HTML lo está entregando un servidor Django.</p>
+</body>
+</html>
+C. Cambiar la "Receta" en views.py
+Ahora hay que decirle a la función que en lugar de un texto aburrido, use el archivo que creamos.
+Abre principal/views.py y cambia la función:
+
+Python
+from django.shortcuts import render # <--- Importante usar 'render'
+
+def hola_mundo(request):
+    return render(request, 'principal/index.html') # <--- Cambiamos HttpResponse por render
+3. ¿Por qué esto es valioso para su clase de HTML?
+Aquí es donde los motivas:
+
+Páginas Dinámicas: Mañana les puedes enseñar que Django puede enviar datos al HTML. Por ejemplo, que el HTML diga: <h1>Hola, {{ nombre }}</h1>. Django puede cambiar ese nombre según quién entre.
+
+Inspeccionador de Elementos: Pídeles que miren el código fuente en el navegador (Clic derecho -> Ver código fuente). Verán exactamente el HTML que escribieron, pero entregado por su propio servidor.
+
+Separación de tareas: El que sabe HTML se encarga de la carpeta templates, y el que sabe Python se encarga de views.py. Así se trabaja en las empresas grandes.
+
+Ejercicio sugerido para mañana:
+Que cada alumno traiga su pequeño diseño de HTML que hizo en la clase anterior.
+
+Que sigan los pasos para meterlo en la carpeta templates.
+
+Que logren verlo corriendo en [http://127.0.0.1:8000/](http://127.0.0.1:8000/).
