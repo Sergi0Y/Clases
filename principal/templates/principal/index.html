@@ -1,14 +1,13 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi pagína con Django</title>
+{% extends 'principal/base.html' %}
 
-    <link rel="stylesheet" href="{% static 'principal/styles.css' %}">    
-</head>
-<body>
-    <h1>Hola Django</h1>
-</body>
-</html>
+{% block content %}
+    <h2>Esta es la página de Inicio</h2>
+    <p>Bienvenidos alumnos, este es el curso de {{ nombre_curso }}.</p>
+    <p>Listado de alumnos</p>
+    <ul>
+        {% for alumno in lista_alumnos %}
+        <li>{{ alumno }}</li>
+        {% endfor %}   
+             
+    </ul>
+{% endblock %}
