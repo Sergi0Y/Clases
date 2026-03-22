@@ -35,3 +35,4 @@ git commit -m "Proyecto inicial Django"
 ```bash
 git push origin master:Django --force
 ```
+### 6. Subir cambios nue
