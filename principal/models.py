@@ -4,7 +4,7 @@ class Curso(models.Model):
     nombre = models.CharField(max_length=200)
     profesor = models.CharField(max_length=200)
     n_alumnos = models.IntegerField()
-    descripción = models.TextField(null=True, blank=True)
+    descripcion = models.TextField(null=True, blank=True)
 
     def __str__(self):
-        return
+        return self.nombre

@@ -1,16 +1,20 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from .models import Curso #tabla creada
+from .forms import CursoForm # Importamos el formulario que creamos arriba
 
-def hola_mundo(request):
-	return HttpResponse("<h1>¡Hola Clase! Este es el primer backend</h1>")
-""" def main(request):
-    return render(request,'principal/index.html') """
-def main(request):
-    datos ={
-        "nombre_curso": "Programación Backend con Django",
-        "profesor": "Sergio",
-        "n_alumnos": 15,
-        "lista_alumnos": ["Juan", "María", "Pedro", "Ana"]
-    }
-    return render(request, 'principal/index.html',datos)
-# Create your views here.
+def inicio(request):
+   #traemos todos los cursos y los guardamos en nuestra variable
+   cursos = Curso.objects.all()
+
+    # al apretar guardar o enviar (POST)
+   if request.method == 'POST':
+      form = CursoForm(request.POST)
+      if form.is_valid():
+         form.save()
+         return redirect('inicio') #recargamos
+   else:
+      #si solo entramos a la pag el form va vacío
+      form = CursoForm() 
+        
+   return render(request, 'principal/index.html', {"cursos": cursos, 'form':form})
+

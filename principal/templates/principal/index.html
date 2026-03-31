@@ -1,12 +1,64 @@
 {% extends 'principal/base.html' %}
 
 {% block content %}
-    <h2>Esta es la página de Inicio</h2>
-    <p>Bienvenidos alumnos, este es el curso de {{ nombre_curso }}.</p>
-    <p>Listado de alumnos</p>
-    <ul>
-        {% for alumno in lista_alumnos %}
-        <li>{{ alumno }}</li>
-        {% endfor %}                
-    </ul>
+<h2>Esta es la página de Inicio</h2>
+<main>
+<div class="form_container">
+
+    <h3>Registro</h3>
+    <form method="POST">
+        <fieldset>
+            <legend>Nuevo curso</legend>
+        {% csrf_token %} {{ form.as_p }}  <button type="submit" class="btn_save">Guardar</button>
+        </fieldset>
+    </form>
+</div>
+
+<div class="cursos_content">
+    {% for c in cursos %}
+    <div class="data_table">
+        <h3>{{ c.nombre }}</h3>
+        <p>Profesor encargado: {{ c.profesor }}</p>
+        <p>Alumnos registrados: {{ c.n_alumnos }}</p>
+        <p>{{ c.descripcion }}</p>
+    </div>
+    {% empty %}
+    <p>No hay datos</p>
+    {% endfor %}
+</div>
+
+<!-- <div class="table_cursos">    
+
+    <table>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Profesor
+            </th>
+            
+            <th>
+                Cantidad de alumnos
+            </th>
+        </tr>
+        {% for c in cursos %}
+        <tr>
+            <td>
+                {{ c.nombre}}
+            </td>
+            <td>
+                {{ c.profesor}}
+            </td>
+            <td>
+                {{ c.n_alumnos}}
+            </td>
+        </tr>
+    
+    {% empty %}
+    <p>No hay datos</p>
+    {% endfor %}
+    </table>
+</div> -->
+</main>
 {% endblock %}

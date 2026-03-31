@@ -1,3 +1,42 @@
 body{
     background: #09f;        
 }
+
+.cursos_content{
+    align-items: center;
+}
+
+.data_table{
+    border: 1px solid;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(165, 203, 228);
+}
+tr:hover {
+    background-color: #524a4a5e; /* Un gris muy suave */
+    cursor: pointer;    
+}
+
+/* FOMRULARIO */
+
+.form_container{
+    border: 1px solid;
+    width: 70vh;
+    border: 1px solid green;
+}
+.btn_save{
+    height: 25px;
+}
