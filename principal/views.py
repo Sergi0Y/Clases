@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Curso #tabla creada
 from .forms import CursoForm # Importamos el formulario que creamos arriba
+from django.shortcuts import render, get_object_or_404
 
 def inicio(request):
    #traemos todos los cursos y los guardamos en nuestra variable
@@ -18,3 +19,6 @@ def inicio(request):
         
    return render(request, 'principal/index.html', {"cursos": cursos, 'form':form})
 
+def detalle_curso(request, curso_id):
+    curso = get_object_or_404(Curso, pk=curso_id)
+    return render(request, 'principal/detalle.html', {'curso': curso})

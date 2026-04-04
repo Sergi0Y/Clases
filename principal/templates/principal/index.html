@@ -14,20 +14,19 @@
     </form>
 </div>
 
+
 <div class="cursos_content">
     {% for c in cursos %}
-    <div class="data_table">
-        <h3>{{ c.nombre }}</h3>
-        <p>Profesor encargado: {{ c.profesor }}</p>
-        <p>Alumnos registrados: {{ c.n_alumnos }}</p>
-        <p>{{ c.descripcion }}</p>
+    <div>
+        <h4>{{ c.nombre }}</h4>
+        <a href="{% url 'detalle' c.id %}" class="btn btn-info btn-sm">Ver detalles</a>
     </div>
     {% empty %}
     <p>No hay datos</p>
     {% endfor %}
 </div>
 
-<!-- <div class="table_cursos">    
+<div class="table_cursos">    
 
     <table>
         <tr>
@@ -41,6 +40,9 @@
             <th>
                 Cantidad de alumnos
             </th>
+            <th>
+                Descripción
+            </th>
         </tr>
         {% for c in cursos %}
         <tr>
@@ -53,12 +55,15 @@
             <td>
                 {{ c.n_alumnos}}
             </td>
+            <td>
+                {{ c.descripcion}}
+            </td>
         </tr>
     
     {% empty %}
     <p>No hay datos</p>
     {% endfor %}
     </table>
-</div> -->
+</div> 
 </main>
 {% endblock %}
