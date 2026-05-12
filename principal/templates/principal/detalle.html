@@ -1,0 +1,18 @@
+{% extends 'principal/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Detalles de: {{ curso.nombre }}</h1>
+    <hr>
+    <h1>Profesor a cargo: {{ curso.profesor }}</h1>
+    <h2>Total alumnos: {{ curso.n_alumnos }}</h2>
+    
+    <div>
+        <h3>Descripción Completa</h3>
+        <h4>{{ curso.descripcion }}</h4>
+    </div>
+
+    <br>
+    <a href="{% url 'inicio' %}" class="btn btn-primary">Volver al listado</a>
+</div>
+{% endblock %}
