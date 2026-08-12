@@ -11,6 +11,33 @@ a=input("Ingrese su nombre: ")
 saludar(a) """
 
 
+
+def sumar (x):    
+    n_suma=0
+    for i in range(x):        
+        suma = int(input(f"Ingrese el valor número {i+1}°: "))
+        n_suma = n_suma + suma
+    return n_suma
+
+x = int(input("Ingrese cuantos números desea sumar: "))
+resultado = sumar(x)
+print(f"la suma es {resultado}")
+
+
+""" 
+def sumar(x):    
+    n_suma = 0  # Inicializar la suma en 0
+    for i in range(x):        
+        numero = int(input(f"Ingrese el valor número {i+1}°: "))
+        n_suma += numero  # Sumar al total
+    return n_suma  # Retornar el resultado
+
+# Pedir al usuario cuántos números desea sumar
+x = int(input("Ingrese cuántos números desea sumar: "))
+resultado = sumar(x)
+print(f"La suma total es: {resultado}")
+ """
+
 #FUNCIÓN CON RETURN
 """ def saludar(nombre):
     return "Hola, " + nombre + "!"

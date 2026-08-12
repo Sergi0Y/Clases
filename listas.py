@@ -1,4 +1,4 @@
-
+ 
 # EJEMPLO DE LISTA
 """ 
 nombreDeLista = ["String",int,bool,float]
@@ -177,7 +177,8 @@ print("Últimos tres elementos:", lista[-3:])
 
 # RECORRIENDO LISTAS
 #FOR
-""" list = [1,2,3,4,5]
+""" 
+list = [1,2,3,4,5]
 x = len(list)
 
 print("Imprimir lista con for simple")
@@ -189,8 +190,7 @@ print("Imprimir lista con for y len")
 list = [1,2,3,4,5]
 
 for i in range(x):
-    print(list[i])
-
+    print(list[i]) 
 """
 
 #WHILE
@@ -288,3 +288,85 @@ nums.reverse()
 print(nums)  # [3, 2, 1]
 """
 
+
+#EJERCICIOS
+#1 SUMAR TODOS LOS ELEMENTOS DE UNA LISTA
+""" sumas = [1,2,3,4,5,6,7]
+suma=0
+for i in sumas:    
+    suma+=i
+    print(suma)
+print(suma) """
+
+#2 ENCONTRAR EL NÚMERO MÁS GRANDE
+""" numeros = [3,6,8,2,2437,7,234,65,9]
+numM=0
+for i in numeros:
+    if numM<i:
+        numM = i
+print(numM)
+  """
+
+#3 reemplazar los negativos por 0
+""" nums = [3,-6,8,2,2437,-7,234,65,-9]
+cant = len(nums)
+z = 0
+for i in range(cant):    
+    if nums[i]<z:
+        nums[i]=z
+print(nums)
+ """
+#4 Cuantas veces está un num
+""" 
+contNum = [1,2,3,1,2,3,6,4,2,3,4,3,5,2,1]
+x = int(input("Ingrese que número quiere revisar: "))
+num = contNum.count(x)
+print(f"el número {x} se repite {num} veces")
+"""
+#5 eliminar todos los elementos repetidos de una lista
+""" nums = [1,2,3,1,2,3,6,4,2,3,4,3,5,2,1]
+
+for i in nums:
+    if nums.count(i)>1:        
+        nums.remove(i)
+        print(nums)
+        
+print(nums) """
+
+#6Invertir lista
+""" list[::-1] """
+#7 ordenar de menor a mayor
+""" list.sort """
+#8 combinar dos listas
+"""a.extend(b)"""
+#9 verificar si está vacía
+""" if list.count==0:
+    print("lista vacia") """
+#10 crear lista con los cuadrados del 1 al 10
+
+#11 contar vocales 
+
+#12 concatenar palabras
+
+#13 convertir lista de caracteres en una palabra
+
+
+
+"""
+frutas = ["Manzana","Plátano","Pera","Naranja"]
+print(frutas)
+frutas.insert(1,"Piña")
+print(frutas)
+"""
+
+
+
+
+
+
+
+""" 
+Suma acumulada de n números
+Función que reciba un número n, y pida por teclado n números.
+Al final, retorna la suma de todos ellos.
+"""
